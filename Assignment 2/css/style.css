@@ -1,0 +1,190 @@
+/* ------------------------homepage---------------------------- */
+/* This is font */
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p,a,li{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* This is navbar part */
+.navbar-brand{
+    width: auto;
+    height: 110px;
+}
+.navbar-brand img{
+    width: auto;
+    height: 100%;
+}
+
+/* This is masthead part */
+.masthead{
+    height: 100vh;
+    background-image: url(../img/photo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.masthead div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.7);
+    height: 100%;
+}
+
+.masthead div h1{
+    font-size: 90px;
+    color: #f8f8f8;
+    text-align: center;
+}
+
+.masthead div a.btn {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #999999;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.masthead div a.btn.btn-primary:hover {
+    background-color: #454545;
+}
+
+/* ------------------------order page--------------------- */
+
+/* choose your pizza part */
+.pizza-selection {
+    margin: 10px 10px 10px 10px;
+}
+
+.pizza-head{
+    text-align: center;
+}
+
+.pizza-flex {
+    display: flex;
+    align-items: center;
+}
+
+.pizza-flex > h3 {
+    margin-right: 10px;
+}
+
+
+.pizza-grid{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "m m m "
+          "m m m ";
+    margin-top: 20px;
+    width: 60%;
+}
+
+.pizza-item{
+    text-align: center;
+}
+
+/* choose your pizza part - form */
+.more-information {
+    font-family: sans-serif;
+    margin-left: 100px;
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align:left;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* JOIN NOW / SIGN IN part */
+.sign-in-information {
+    margin: 10px 10px 10px 10px;
+}
+
+.sign-in-information > h3{
+    text-align: center;
+}
+
+.personal-information {
+    display: flex;
+    width: 15%;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 43%;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+.personal-information > h3 {
+    text-align: center;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.form-buttons button {
+    background-color: #C11B17;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*This is footer */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.footer p {
+    color: #ddd;
+}
+
+
+.footer .social-media i {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 0;
+}
+
+.social-media-icon {
+    display: inline-block;
+    margin-right: 34px;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 0;
+}
+

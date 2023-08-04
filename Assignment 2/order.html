@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <meta name = "viewpoint" content="width=device-midth, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+        <meta name="description" content="order a pizza">
+        <!-- This is the font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;400&family=Roboto+Condensed&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+        <!-- This is the jquery -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!-- Bootstrap Icons (https://icons.getbootstrap.com/#usage) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Bootstrap JS (https://getbootstrap.com/) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/js.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- nav bar -->
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+            <img src="./img/logo.png" alt="header logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="order.html" class="nav-link active">Order Online</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="https://dominos.gcs-web.com/our-strengths" class="nav-link active">About Us</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="https://www.dominos.ca/en/pages/content/customer-service/faq">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- pizza selection -->
+<section class="pizza-selection">
+  <div class="pizza-head">
+        <h3>SELECT YOUR PIZZA</h3>
+  </div>
+  <div class="pizza-flex">
+      <div class="pizza-grid">
+            <div class="pizza-item">
+            <img src="./img/Pizza1.png" alt="VEGGIE PIZZA">
+            <label>
+                <input type="radio" name="pizza-choice" value="pizza1">
+            </label>
+            <p>VEGGIE PIZZA</p>
+            </div>
+            <div class="pizza-item">
+            <img src="./img/Pizza2.png" alt="EXTRAVAGANZZA PIZZA">
+            <label>
+                <input type="radio" name="pizza-choice" value="pizza2">
+            </label>
+            <p>EXTRAVAGANZZA PIZZA</p>
+            </div>
+            <div class="pizza-item">
+            <img src="./img/Pizza3.png" alt="BROOKLYN PIZZA">
+            <label>
+                <input type="radio" name="pizza-choice" value="pizza3">
+            </label>
+            <p>BROOKLYN PIZZA</p>
+            </div>
+            <div class="pizza-item">
+            <img src="./img/Pizza4.png" alt="BBQ CHICKEN FEAST PIZZA">
+            <label>
+                <input type="radio" name="pizza-choice" value="pizza4">
+            </label>
+            <p>BBQ CHICKEN FEAST PIZZA</p>
+            </div>
+            <div class="pizza-item">
+            <img src="./img/Pizza5.png" alt="CANADIAN PIZZA">
+            <label>
+                <input type="radio" name="pizza-choice" value="pizza5">
+            </label>
+            <p>CANADIAN PIZZA</p>
+            </div>
+            <div class="pizza-item">
+            <img src="./img/Pizza6.png" alt="HAWAIIAN PIZZA">
+            <label>
+                <input type="radio" name="pizza-choice" value="pizza6">
+            </label>
+            <p>HAWAIIAN PIZZA</p>
+            </div>
+      </div>
+      <div class="more-information">
+          <form method="post" action="index.html" enctype="multipart/form-data">
+              <label for="quantity">Quantity:</label>
+              <br>
+              <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+              <br>
+              <label>Toppings: </label>
+              <br>
+              <input type="checkbox" id="topping1" name="topping1" value="Pepperoni">
+              <label for="topping1">Pepperoni</label>
+              <input type="checkbox" id="topping2" name="topping2" value="Brooklyn Pepperoni">
+              <label for="topping2">Brooklyn Pepperoni</label>
+              <br>
+              <input type="checkbox" id="topping3" name="topping3" value="Beef Crumble">
+              <label for="topping3">Beef Crumble</label>
+              <input type="checkbox" id="topping4" name="topping4" value="Ham">
+              <label for="topping4">Ham</label>
+              <br>
+              <input type="checkbox" id="topping5" name="topping5" value="Bacon">
+              <label for="topping5">Bacon</label>
+              <input type="checkbox" id="topping6" name="topping6" value="Chicken">
+              <label for="topping6">Chicken</label>
+              <br>
+              <label>Sauces: </label>
+              <br>
+              <input type="checkbox" id="sauce1" name="Garlic Dipping Sauce" value="Garlic Dipping Sauce">
+              <label for="sauce1">Garlic Dipping Sauce</label>
+              <br>
+              <input type="checkbox" id="sauce2" name="Ranch Cup" value="Ranch Cup">
+              <label for="sauce2">Ranch Cup</label>
+              <input type="checkbox" id="sauce3" name="Marinara Sauce Cup" value="Marinara Sauce Cup">
+              <label for="sauce3">Marinara Sauce Cup</label>
+              <br>
+              <label for="notes">Notes:</label>
+              <br>
+              <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Enter your notes here..."></textarea>
+              <br>
+          </form>
+          <div class="form-buttons">
+          <button type="button" class="btn btn-primary">ADD TO CART</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- sign-up-information form -->
+<section class="sign-in-information">
+    <h3>JOIN NOW / SIGN IN</h3>
+    <div class="personal-information">
+        <form method="post" action="index.html" enctype="multipart/form-data">
+            <label for="fname">Your first name: </label>
+            <br>
+            <input type="text" name="fname" id="fname" placeholder="*First Name" required>
+            <br>
+            <label for="lname">Your last name: </label>
+            <br>
+            <input type="text" name="lname" id="lname" placeholder="*Last Name" required>
+            <br>
+            <label>Password: </label>
+            <br>
+            <input type="password" name="pname" required>
+            <br>
+            <label for="email">Your Email: </label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Your Email">
+            <br>
+            <label for="bdate">What's your date of birth?</label>
+            <br>
+            <input type="date" id="bdate" name="birthday">
+            <br>
+            <label for="phone">Your Phone Number: </label>
+            <br>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="705-123-1234">
+            <br>
+        </form>
+    </div>
+    <div class="form-buttons">
+        <button type="button" class="btn btn-primary">CANCEL</button>
+        <button type="button" class="btn btn-primary">LOGIN/SIGN IN</button>
+    </div>
+</section>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <p>Email: info@pizzawebsite.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Pizza Street, City, Country</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <div class="social-media-icon">
+                    <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-media-icon">
+                    <i class="bi bi-twitter"></i>
+                    </div>
+                    <div class="social-media-icon">
+                    <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
